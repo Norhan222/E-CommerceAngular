@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <h3>Login</h3>
+
+  <form (ngSubmit)="Login()">
+    <input type="email" class="form-control mb-2" required placeholder="Email" [(ngModel)]="email" name="email">
+
+    <input type="password" class="form-control mb-2" required placeholder="Password" [(ngModel)]="password"
+      name="password">
+
+    <button class="btn btn-primary w-100 mb-3">Login</button>
+
+    <div class="text-center">
+      <span>Don't have an account?</span>
+      <a  routerLink="/sign-up" routerLinkActive="router-link-active"  class="ms-1">Sign up</a>
+    </div>
+  </form>
+</div>

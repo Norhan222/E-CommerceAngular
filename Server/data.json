@@ -1,0 +1,73 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 999.99,
+      "quantity": 1,
+      "description": "High performance laptop",
+      "imageUrl": "./download.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 699.99,
+      "quantity": 25,
+      "description": "Latest model smartphone",
+      "imageUrl": "./download (8).jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "name": "Headphones",
+      "price": 199.99,
+      "quantity": 1,
+      "description": "Noise-cancelling headphones",
+      "imageUrl": "./download (1).jpeg",
+      "categoryId": 2
+    },
+    {
+      "id": "4",
+      "name": "Smartwatch",
+      "price": 299.99,
+      "quantity": 0,
+      "description": "Feature-rich smartwatch",
+      "imageUrl": "./download (2).jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": "2108",
+      "name": "test",
+      "price": 23,
+      "categoryId": "1",
+      "description": "rrr"
+    }
+  ],
+  "users": [
+    {
+      "id": "2f6b",
+      "name": "norhan",
+      "email": "nour_allam11@gmail.com",
+      "password": "rko54321"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Accessories"
+    },
+    {
+      "id": "3",
+      "name": "Clothing"
+    },
+    {
+      "id": "4",
+      "name": "Home Appliances"
+    }
+  ]
+}

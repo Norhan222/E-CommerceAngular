@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="product?.imageUrl" class="img-fluid rounded" alt="{{ product?.name }}">
+    </div>
+    <div class="col-md-6">
+      <h2>{{ product?.name }}</h2>
+      <p class="fw-bold">Price: {{ product?.price | currency }}</p>
+      <p class="fw-bold">Quantity: {{ product?.quantity }}</p>
+      <p>{{ product?.description }}</p>
+      <button class="btn btn-primary" [disabled]="product?.quantity === 0">
+        <i class="bi bi-cart fs-5 me-1"></i> Add to Cart
+      </button>
+    </div>
+  </div>
+
+</div>

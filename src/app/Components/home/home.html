@@ -1,0 +1,35 @@
+
+
+<div class="container mt-5">
+    <form class="d-flex mx-auto w-50 mb-5">
+      <input  [(ngModel)]="FilterByName" [ngModelOptions]="{standalone:true}" class="form-control rounded-pill px-3" type="search" placeholder="Search products…">
+    </form>
+        <p class="fw-bold mt-auto">Date Added: {{ date | date:'mediumDate' }}</p>
+        <p>{{ '1234567812345678' | credit }}</p>
+    <app-products [Filtervalue]="FilterByName" (addtocart)="AddProdutToCart($event)" ></app-products>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of products; track item.id) {
+        <tr>
+          <th scope="row">{{ item.id }}</th>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.quantity }}</td>
+          <td><button class="btn btn-danger btn-sm" (click)="deleteProductFromCart(item)">Remove</button></td>
+        </tr>
+      }
+      </tbody>
+    </table>
+
+</div>
+
